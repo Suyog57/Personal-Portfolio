@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import Intro from './components/Intro/Intro';
 import About from './components/About/About';
 import Contact from './components/contact/Contact';
