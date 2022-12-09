@@ -21,6 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "homepage":"https://suyog57.github.io/Personal-Portfolio/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
