@@ -1,3 +1,11 @@
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
+
+.introImg::after {
+  @apply content-[''] w-full left-0 top-0 rounded-xl rotate-12 h-full absolute bg-gray-600 -z-10;
+}
+
 .App {
   text-align: center;
 }

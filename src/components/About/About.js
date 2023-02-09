@@ -1,48 +1,56 @@
 import React from "react";
 import "./About.css";
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import aboutImg from "../../assets/images/me1.JPG";
 
 const About = () => {
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch("Suyog_Vinod_Chaudhari_2001EE77.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "Suyog_Vinod_Chaudhari_2001EE77.pdf";
-        alink.click();
-      });
-    });
-  };
   return (
     <>
-      <div className="a">
-        <div className="a-left">
-          <img src="../../images/me1.JPG" className="a-img"></img>
-        </div>
+      <section id="about" className="py-10 text-white bg-gray-800">
+        <div className="text-center mt-8 h-full">
+          <h3 className="text-4xl font-semibold">
+            ABOUT <span className=" text-indigo-600">ME</span>
+          </h3>
 
-        <div className="a-right">
-          <div className="a-right-wrapper">
-            <h1 className="a-title">About Me</h1>
-            <h2 className="a-sub">Web Development, CP, DSA</h2>
-            <h3 className="a-desc">
-              I am Suyog Vinod Chaudhari, currently a junior year student
-              pursuing B.tech in Electrical and Electronics engineering from IIT
-              Patna. My main interests lie in problem solving and website
-              development. I have quite good knowledge of DSA.
-            </h3>
-            <div className="a-buts">
-              <button className="a-but" onClick={onButtonClick}>
-                Download CV
-              </button>
-              
+          <div className="flex lg:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 py-10 max-w-6xl mx-auto">
+            <div className="p-2">
+              <div className="my-3">
+                <p className="text-justify leading-7 w-11/12 mx-auto">
+                  I am Suyog Vinod Chaudhari, currently a junior year student
+                  pursuing B.tech in Electrical and Electronics engineering at
+                  IIT Patna. My main interests lie in problem solving and
+                  website development. I also have quite good knowledge of DSA.
+                </p>
+
+                <br />
+                <p className="text-2xl font-bold w-11/12 text-justify mx-auto mt-3">
+                  Web Development, CP, DSA
+                </p>
+                <br />
+                <br />
+                <div className="rounded-full flex justify-center md:justify-start md:w-11/12 md:mx-auto md:text-justify">
+                  <a
+                    href="./src/assets/Suyog_Vinod_Chaudhari_2001EE77.pdf"
+                    download
+                  >
+                    <button className="bg-indigo-600 rounded-full">
+                      Download CV
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex-1  md:mt-0 mt-6 flex justify-center items-center">
+              <div className=" lg:w-96 h-full relative w-11/12 max-w-sm aboutImg">
+                <img
+                  src={aboutImg}
+                  className="w-full object-cover bg-cyan-600 rounded-xl"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
