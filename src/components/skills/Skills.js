@@ -38,26 +38,25 @@ const Skills = () => {
         </h3>
 
         <div className="text-4xl my-10 flex flex-col justify-center items-center flex-wrap">
-          <div className="flex flex-col md:flex-row flex-wrap justify-center items-center">
+          <div className="flex flex-col md:flex-row flex-wrap justify-center items-center ">
             {skills?.map((skill, i) => (
               <>
                 <div
                   key={i}
                   className="mx-6 my-3 border-2 group border-indigo-600 min-w-[10rem] max-w-[16rem] bg-gray-800 p-10 rounded-xl"
                 >
-                  <p className="text-2xl mb-3 font-semibold">{skill.name}</p>
+                  <p className="text-2xl mb-6 font-semibold">{skill.name}</p>
                   <div
                     style={{
-                      background: `conic-gradient(rgb(79, 70, 229) ${skill.count}%,#ddd 50%)`,
+                      background: `conic-gradient(rgb(79, 70, 229) 100%,#ddd 50%)`,
                     }}
-                    className="w-32 h-32 flex items-center justify-center rounded-full"
+                    className="mb-3 w-32 h-32 flex items-center justify-center rounded-full"
                   >
                     <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-indigo-600">
                       {skill.logo}
                     </div>
                   </div>
 
-                  <p className="text-xl mt-6">{skill.level}</p>
                 </div>
               </>
             ))}

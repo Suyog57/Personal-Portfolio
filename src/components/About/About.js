@@ -3,6 +3,17 @@ import "./About.css";
 import aboutImg from "../../assets/images/me1.JPG";
 
 const About = () => {
+  const onButtonClick = () => {
+    fetch("Suyog_Vinod_Chaudhari_2001EE77.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Suyog_Vinod_Chaudhari_Resume.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <>
       <section id="about" className="py-10 text-white bg-gray-800">
@@ -28,14 +39,12 @@ const About = () => {
                 <br />
                 <br />
                 <div className="rounded-full flex justify-center md:justify-start md:w-11/12 md:mx-auto md:text-justify">
-                  <a
-                    href="./src/assets/Suyog_Vinod_Chaudhari_2001EE77.pdf"
-                    download
+                  <button
+                    className="bg-indigo-600 rounded-full"
+                    onClick={onButtonClick}
                   >
-                    <button className="bg-indigo-600 rounded-full">
-                      Download CV
-                    </button>
-                  </a>
+                    Download CV
+                  </button>
                 </div>
               </div>
             </div>
@@ -45,6 +54,7 @@ const About = () => {
                 <img
                   src={aboutImg}
                   className="w-full object-cover bg-cyan-600 rounded-xl"
+                  alt="me"
                 />
               </div>
             </div>
