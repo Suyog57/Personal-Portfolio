@@ -2,7 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../../assets/images/blog.jpg";
 import project2 from "../../assets/images/empmanag.jpg";
-import project3 from "../../assets/images/20943470.jpg";
+import project3 from "../../assets/images/portfolio.jpg";
+import project4 from "../../assets/images/expense.jpg"
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -26,6 +27,12 @@ const ProjectList = () => {
       name: "Personal Portfolio",
       github_link: "https://github.com/Suyog57/Personal-Portfolio",
       live_link: "https://suyogchaudhari.netlify.app/",
+    },
+    {
+      img: project4,
+      name: "Expense Tracker",
+      github_link: "https://github.com/Suyog57/Expense-Tracker",
+      live_link: "",
     },
   ];
 
