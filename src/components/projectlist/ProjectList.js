@@ -32,7 +32,7 @@ const ProjectList = () => {
       img: project4,
       name: "Expense Tracker",
       github_link: "https://github.com/Suyog57/Expense-Tracker",
-      live_link: "",
+      live_link: "https://expense-tracker-suyog.netlify.app/",
     },
   ];
 
