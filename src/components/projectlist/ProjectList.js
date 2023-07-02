@@ -3,7 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../../assets/images/blog.jpg";
 import project2 from "../../assets/images/empmanag.jpg";
 import project3 from "../../assets/images/portfolio.jpg";
-import project4 from "../../assets/images/expense.jpg"
+import project4 from "../../assets/images/expense.jpg";
+import project5 from "../../assets/images/managesystem.jpg";
+import project6 from "../../assets/images/bot.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -11,11 +13,24 @@ import { Pagination, Autoplay } from "swiper";
 const ProjectList = () => {
   const projects = [
     {
+      img: project5,
+      name: "Doctor Appointment System",
+      github_link: "",
+      live_link: "https://appointment-system-pegasus57.vercel.app/login",
+    },
+    {
+      img: project6,
+      name: "ChatGPT Whatsapp Bot",
+      github_link: "https://github.com/Suyog57/whatsapp-chatbot",
+      live_link: "",
+    },
+    {
       img: project1,
       name: "Blog App",
       github_link: "https://github.com/Suyog57/Blog-app",
-      live_link: "",
+      live_link: "https://blog-app-pegasus57.vercel.app/",
     },
+
     {
       img: project2,
       name: "Employee Management System",
