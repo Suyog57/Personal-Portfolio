@@ -15,13 +15,13 @@ const ProjectList = () => {
     {
       img: project5,
       name: "Doctor Appointment System",
-      github_link: "",
+      github_link: "https://github.com/Suyog57/Appointment-System",
       live_link: "https://appointment-system-pegasus57.vercel.app/login",
     },
     {
       img: project6,
-      name: "ChatGPT Whatsapp Bot",
-      github_link: "https://github.com/Suyog57/whatsapp-chatbot",
+      name: "Discord Poll Bot",
+      github_link: "",
       live_link: "",
     },
     {
@@ -30,12 +30,11 @@ const ProjectList = () => {
       github_link: "https://github.com/Suyog57/Blog-app",
       live_link: "https://blog-app-pegasus57.vercel.app/",
     },
-
     {
-      img: project2,
-      name: "Employee Management System",
-      github_link: "https://github.com/Suyog57/Employee-Management-System",
-      live_link: "",
+      img: project4,
+      name: "Expense Tracker",
+      github_link: "",
+      live_link: "https://expense-manager-hazel-nine.vercel.app/login",
     },
     {
       img: project3,
@@ -44,10 +43,10 @@ const ProjectList = () => {
       live_link: "https://suyogchaudhari.netlify.app/",
     },
     {
-      img: project4,
-      name: "Expense Tracker",
-      github_link: "https://github.com/Suyog57/Expense-Tracker",
-      live_link: "https://expense-tracker-suyog.netlify.app/",
+      img: project2,
+      name: "Employee Management System",
+      github_link: "https://github.com/Suyog57/Employee-Management-System",
+      live_link: "",
     },
   ];
 

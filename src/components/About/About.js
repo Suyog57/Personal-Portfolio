@@ -26,10 +26,12 @@ const About = () => {
             <div className="p-2">
               <div className="my-3">
                 <p className="text-justify leading-7 w-11/12 mx-auto">
-                  I am Suyog Vinod Chaudhari, currently a junior year student
+                  I am Suyog Vinod Chaudhari, currently a final year student
                   pursuing B.tech in Electrical and Electronics engineering at
-                  IIT Patna. My main interests lie in problem solving and
-                  website development. I also have quite good knowledge of DSA.
+                  IIT Patna. My main interests have been inclined towards
+                  problem solving and website development. In addition, I
+                  possess a commendable proficiency in Data Structures and
+                  Algorithms (DSA).
                 </p>
 
                 <br />
