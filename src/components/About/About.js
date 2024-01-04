@@ -4,16 +4,11 @@ import aboutImg from "../../assets/images/me1.JPG";
 
 const About = () => {
   const onButtonClick = () => {
-    fetch("Suyog_Vinod_Chaudhari_2001EE77.pdf").then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "Suyog_Vinod_Chaudhari_Resume.pdf";
-        alink.click();
-      });
-    });
+    console.log("f");
+    window.location.href =
+      "https://drive.google.com/file/d/1cVUiejI7C8Eqk4OoyVna6vpIarUVzh-l/view?usp=drive_link";
   };
+
   return (
     <>
       <section id="about" className="py-10 text-white bg-gray-800">
@@ -41,12 +36,14 @@ const About = () => {
                 <br />
                 <br />
                 <div className="rounded-full flex justify-center md:justify-start md:w-11/12 md:mx-auto md:text-justify">
-                  <button
-                    className="bg-indigo-600 rounded-full"
-                    onClick={onButtonClick}
+                  <a
+                  target="_blank"
+                    className="bg-indigo-600 rounded-full p-4 font-semibold hover:bg-blue-500"
+                    href="https://drive.google.com/file/d/1cVUiejI7C8Eqk4OoyVna6vpIarUVzh-l/view?usp=drive_link"
                   >
-                    Download CV
-                  </button>
+                    View Resume
+                  </a>
+                  
                 </div>
               </div>
             </div>
